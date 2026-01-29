@@ -1,0 +1,173 @@
+{
+  "chicken_breast": {
+    "type": "non-veg",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 160,
+    "protein": 30,
+    "carbs": 0,
+    "fats": 3.5
+  },
+  "eggs": {
+    "type": "non-veg",
+    "meal_type": "breakfast",
+    "portion": "1 egg",
+    "calories": 68,
+    "protein": 6,
+    "carbs": 0.6,
+    "fats": 5
+  },
+  "salmon": {
+    "type": "non-veg",
+    "meal_type": "dinner",
+    "portion": "100g",
+    "calories": 150,
+    "protein": 21,
+    "carbs": 0,
+    "fats": 6
+  },
+  "oats": {
+    "type": "vegan",
+    "meal_type": "breakfast",
+    "portion": "50g",
+    "calories": 190,
+    "protein": 6.5,
+    "carbs": 33,
+    "fats": 5
+  },
+  "brown_rice": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 110,
+    "protein": 2.5,
+    "carbs": 23,
+    "fats": 1
+  },
+  "broccoli": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 34,
+    "protein": 2.8,
+    "carbs": 7,
+    "fats": 0.4
+  },
+  "almonds": {
+    "type": "vegan",
+    "meal_type": "snack",
+    "portion": "30g",
+    "calories": 170,
+    "protein": 6,
+    "carbs": 6,
+    "fats": 14
+  },
+  "greek_yogurt": {
+    "type": "vegetarian",
+    "meal_type": "snack",
+    "portion": "100g",
+    "calories": 60,
+    "protein": 10,
+    "carbs": 4,
+    "fats": 0.4
+  },
+  "paneer": {
+    "type": "vegetarian",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 300,
+    "protein": 18,
+    "carbs": 4,
+    "fats": 22
+  },
+  "lentils": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 115,
+    "protein": 9,
+    "carbs": 20,
+    "fats": 0.5
+  },
+  "sweet_potato": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 90,
+    "protein": 1.5,
+    "carbs": 21,
+    "fats": 0.2
+  },
+  "spinach": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 23,
+    "protein": 2.9,
+    "carbs": 3.6,
+    "fats": 0.4
+  },
+  "banana": {
+    "type": "vegan",
+    "meal_type": "snack",
+    "portion": "100g",
+    "calories": 90,
+    "protein": 1.1,
+    "carbs": 23,
+    "fats": 0.3
+  },
+  "tempeh": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 195,
+    "protein": 19,
+    "carbs": 9,
+    "fats": 11
+  },
+  "tofu": {
+    "type": "vegan",
+    "meal_type": "dinner",
+    "portion": "100g",
+    "calories": 80,
+    "protein": 8,
+    "carbs": 2,
+    "fats": 5
+  },
+  "milk": {
+    "type": "vegetarian",
+    "meal_type": "breakfast",
+    "portion": "200ml",
+    "calories": 130,
+    "protein": 6.5,
+    "carbs": 10,
+    "fats": 7
+  },
+  "whole_wheat_bread": {
+    "type": "vegan",
+    "meal_type": "breakfast",
+    "portion": "1 slice",
+    "calories": 75,
+    "protein": 3.5,
+    "carbs": 14,
+    "fats": 1.2
+  },
+  "avocado": {
+    "type": "vegan",
+    "meal_type": "snack",
+    "portion": "100g",
+    "calories": 160,
+    "protein": 2,
+    "carbs": 9,
+    "fats": 15
+  },
+  "chickpeas": {
+    "type": "vegan",
+    "meal_type": "lunch",
+    "portion": "100g",
+    "calories": 165,
+    "protein": 8.5,
+    "carbs": 27,
+    "fats": 2.6
+  }
+}

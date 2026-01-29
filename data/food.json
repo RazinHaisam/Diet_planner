@@ -1,0 +1,33 @@
+{
+  "banana": {
+    "calories_kcal": 89,
+    "protein_g": 1.1,
+    "carbs_g": 22.8,
+    "fat_g": 0.3,
+    "fiber_g": 2.6,
+    "potassium_mg": 358,
+    "vitamin_c_mg": 8.7
+  },
+  "oats": {
+    "calories_kcal": 389,
+    "protein_g": 16.9,
+    "carbs_g": 66.3,
+    "fat_g": 6.9,
+    "fiber_g": 10.6,
+    "iron_mg": 4.7
+  },
+  "chicken breast": {
+    "calories_kcal": 165,
+    "protein_g": 31.0,
+    "fat_g": 3.6,
+    "iron_mg": 1.0,
+    "vitamin_b12_ug": 0.3
+  },
+  "spinach": {
+    "calories_kcal": 23,
+    "protein_g": 2.9,
+    "fiber_g": 2.2,
+    "iron_mg": 2.7,
+    "vitamin_c_mg": 28.1
+  }
+}

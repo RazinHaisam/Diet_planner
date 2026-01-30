@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import DietForm from '@/components/DietForm'
+import DietForm, { FormData } from '@/components/DietForm'
 import ResultsDisplay from '@/components/ResultsDisplay'
 import { Loader2, Zap } from 'lucide-react'
 
@@ -22,7 +22,7 @@ export default function Home() {
   const [results, setResults] = useState<DietResult | null>(null)
   const [currentStep, setCurrentStep] = useState(0)
 
-  const handleGeneratePlan = async (formData: Record<string, number | string>) => {
+  const handleGeneratePlan = async (data: FormData) => {
     setLoading(true)
     setCurrentStep(0)
     setResults({})
@@ -34,10 +34,10 @@ export default function Home() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          weight: formData.weight,
-          height: formData.height,
-          age: formData.age,
-          gender: formData.gender,
+          weight: data.weight,
+          height: data.height,
+          age: data.age,
+          gender: data.gender,
         }),
       })
       const bmrData = await bmrResponse.json()
@@ -50,7 +50,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           bmr: bmrData.bmr,
-          activity: formData.activity,
+          activity: data.activity,
         }),
       })
       const tdeeData = await tdeeResponse.json()
@@ -63,7 +63,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           tdee: tdeeData.tdee,
-          goal: formData.goal,
+          goal: data.goal,
         }),
       })
       const caloriesData = await caloriesResponse.json()
@@ -75,7 +75,7 @@ export default function Home() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          weight: formData.weight,
+          weight: data.weight,
           calories: caloriesData.calories,
         }),
       })
@@ -89,7 +89,7 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           macros: macrosData,
-          diet_type: formData.diet_type,
+          diet_type: data.diet_type,
         }),
       })
       const mealData = await mealResponse.json()

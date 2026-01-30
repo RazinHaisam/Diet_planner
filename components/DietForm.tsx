@@ -6,7 +6,7 @@ import Input from './ui/Input'
 import Select from './ui/Select'
 import { Loader2 } from 'lucide-react'
 
-interface FormData {
+export interface FormData {
   age: number
   gender: string
   height: number

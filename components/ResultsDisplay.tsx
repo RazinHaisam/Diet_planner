@@ -4,7 +4,6 @@ interface Macros {
   protein: number
   carbs: number
   fats: number
-  calories: number
 }
 
 interface DietResult {
@@ -69,7 +68,7 @@ export default function ResultsDisplay({ results }: ResultsDisplayProps) {
                 <p className="text-sm text-blue-600 font-bold uppercase mb-2">Protein</p>
                 <p className="text-4xl font-bold text-blue-900">{Math.round(safeResults.macros.protein)}g</p>
                 <p className="text-xs text-blue-500 mt-3 bg-blue-100 py-1 px-2 rounded">
-                  {Math.round((safeResults.macros.protein * 4 / safeResults.calories) * 100)}% of calories
+                  {safeResults.calories ? Math.round((safeResults.macros.protein * 4 / safeResults.calories) * 100) : 0}% of calories
                 </p>
               </div>
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-xl border-2 border-amber-300 card-hover transition-smooth text-center">
@@ -77,7 +76,7 @@ export default function ResultsDisplay({ results }: ResultsDisplayProps) {
                 <p className="text-sm text-amber-600 font-bold uppercase mb-2">Carbs</p>
                 <p className="text-4xl font-bold text-amber-900">{Math.round(safeResults.macros.carbs)}g</p>
                 <p className="text-xs text-amber-500 mt-3 bg-amber-100 py-1 px-2 rounded">
-                  {Math.round((safeResults.macros.carbs * 4 / safeResults.calories) * 100)}% of calories
+                  {safeResults.calories ? Math.round((safeResults.macros.carbs * 4 / safeResults.calories) * 100) : 0}% of calories
                 </p>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl border-2 border-orange-300 card-hover transition-smooth text-center">
@@ -85,7 +84,7 @@ export default function ResultsDisplay({ results }: ResultsDisplayProps) {
                 <p className="text-sm text-orange-600 font-bold uppercase mb-2">Fats</p>
                 <p className="text-4xl font-bold text-orange-900">{Math.round(safeResults.macros.fats)}g</p>
                 <p className="text-xs text-orange-500 mt-3 bg-orange-100 py-1 px-2 rounded">
-                  {Math.round((safeResults.macros.fats * 9 / safeResults.calories) * 100)}% of calories
+                  {safeResults.calories ? Math.round((safeResults.macros.fats * 9 / safeResults.calories) * 100) : 0}% of calories
                 </p>
               </div>
             </div>
